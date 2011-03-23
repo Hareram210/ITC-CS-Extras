@@ -4,6 +4,7 @@ For WAMP users:
 - Extract the files to c:\wamp\www
 - Click on WAMP Icon -> Go to "Apache" -> Apache modules -> enable "rewrite_module"
 - Click on WAMP Icon -> Got to "PHP" -> "PHP Settings" -> enable "short open tag"
+- Click on WAMP icon -> Go to "Apache" -> Service -> Restart
 
 This project will be available at http://localhost when set up correctly.
 
