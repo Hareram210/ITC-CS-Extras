@@ -1,7 +1,9 @@
-Example code and labs for ITC CS Extras #2
+README
 
 - If running WAMP on Windows, extract the files to c:\wamp\www.
 - If running Linux, you probably know what to do. If not, ask for help.
+
+Make sure that mod_rewrite is enabled.
 
 This project will be available at http://localhost when set up correctly.
 
