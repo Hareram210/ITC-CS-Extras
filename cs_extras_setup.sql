@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `WishList` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB;
 
--- that's all; find your own data
+-- start with some data in the table
 INSERT INTO WishList (item, description) VALUES ('Inception DVD', 'Sort of self-explanatory.');
 INSERT INTO WishList (item, description) VALUES ('Router', 'Not the one used to network computers. This one cuts wood.');
 INSERT INTO WishList (item, description) VALUES ('Soccer cleats', 'For ultimate frisbee. Good luck finding a size 14.');

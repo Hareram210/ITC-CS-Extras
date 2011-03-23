@@ -1,1 +1,9 @@
 Example code and labs for ITC CS Extras #2
+
+- If running WAMP on Windows, extract the files to c:\wamp\www.
+- If running Linux, you probably know what to do. If not, ask for help.
+
+This project will be available at http://localhost when set up correctly.
+
+You will also need to set up the cs_extras database used in this project. The
+SQL script for this is located in the root directory of the project files.
