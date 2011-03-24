@@ -28,6 +28,14 @@ p {
     line-height: 1.3;
 }
 
+p.note {
+    color: red;
+}
+
+strong {
+    font-weight: bold;
+}
+
 ul {
     margin: 8px;
 }

@@ -14,13 +14,13 @@ class Main extends CI_Controller {
             '/routing/example/one',
             '/routing/example/two',
             '/routing/sample/route',
-            '/routing/sample',
+            '/routing/sample/',
             '/somewhere/very/different'
         );
         $data['examples_todo'] = array(
-            '/routing/example',
+            '/routing/example/',
             '/routing/sample/another',
-            '/somewhere/else/entirely'
+            '/somewhere/different/entirely'
         );
         
         $this->template->load('template', 'routing/main_page', $data);

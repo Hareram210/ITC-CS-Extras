@@ -1,5 +1,8 @@
 <h1>MVC Routing Lab</h1>
 
+<p class="note"><strong>NOTE:</strong> The code to complete this lab has been
+    added to the project.</p>
+
 <p>Add folders, controllers, and actions as needed to complete the following
     routes. All of these links will display "404 Page Not Found" until you
     create the corresponding routes.</p>

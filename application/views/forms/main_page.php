@@ -8,7 +8,7 @@
 <h2>Example</h2>
 
 <p><a href="/forms/favorites">Favorites</a> - This is a simple example of 
-    database-driven forms on the Web. It uses a SQLite database with one
+    database-driven forms on the Web. It uses a MySQL database with one
     table to store favorites.</p>
 
 <h2>Lab</h2>

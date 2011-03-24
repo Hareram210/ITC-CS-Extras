@@ -6,6 +6,11 @@ class Very extends CI_Controller {
 	{
 		parent::__construct();
 	}
+
+    function index()
+    {
+        echo '/somewhere/very/';
+    }
     
     function different()
     {

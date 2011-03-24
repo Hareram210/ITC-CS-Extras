@@ -16,4 +16,9 @@ class Sample extends CI_Controller {
     {
         echo '/routing/sample/route';
     }
+
+    function another()
+    {
+        echo '/routing/sample/another';
+    }
 }

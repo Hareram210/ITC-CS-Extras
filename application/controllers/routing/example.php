@@ -6,6 +6,11 @@ class Example extends CI_Controller {
 	{
 		parent::__construct();
 	}
+
+    function index()
+    {
+        echo '/routing/example/';
+    }
     
     function one()
     {
@@ -15,5 +20,10 @@ class Example extends CI_Controller {
     function two()
     {
         echo '/routing/example/two';
+    }
+
+    function three()
+    {
+        echo '/routing/example/three';
     }
 }

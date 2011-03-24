@@ -14,10 +14,15 @@ class Lab extends CI_Controller {
             '/routing/example/three',
             '/routing/exercise/one',
             '/random/lab/route',
-            '/routing/exercise',
+            '/routing/exercise/',
             '/routing/lab/tricky'
         );
         
         $this->template->load('template', 'routing/lab_page', $data);
 	}
+
+    function tricky()
+    {
+        echo '/routing/lab/tricky';
+    }
 }
