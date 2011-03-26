@@ -2,7 +2,7 @@
 
 <h2>Setup</h2>
 
-<p>YOu will need to set up your MySQL database using the
+<p>You will need to set up your MySQL database using the
     <a href="/cs_extras_setup.sql">SQL script</a> provided.</p>
 
 <h2>Example</h2>
@@ -15,3 +15,5 @@
 
 <p>Now let's move on to the lab and create a <a href="/forms/wishlist">Wish List</a>
     app that is eerily similar to our Favorites app.</p>
+
+<p class="note"><strong>NOTE:</strong> Wish List app has been completed for reference.</p>

@@ -5,7 +5,8 @@
  */
 class WishList_model extends CI_Model
 {
-    // TODO: add databse columns as properties
+    var $item;        // the item wished for
+    var $description; // description of the item
     
     function __construct() {
         parent::__construct();
@@ -19,7 +20,9 @@ class WishList_model extends CI_Model
      * @return wish object
      */
     function get_wish($id) {
-        // TODO: add code here
+        // SELECT * FROM WishList WHERE id = '$id';
+        $query = $this->db->get_where('WishList', array('id' => $id));
+        return $query->row();
     }
     
     /**
@@ -28,14 +31,20 @@ class WishList_model extends CI_Model
      * @return array of wish objects
      */
     function get_wishes() {
-        // TODO: add code here
+        // SELECT * FROM WishList;
+        $query = $this->db->get('WishList');
+        return $query->result();
     }
     
     /**
      * Add a new wish list item
      */
     function add_wish() {
-        // TODO: add code here
+        $this->item = $this->input->post('wish_item');
+        $this->description = $this->input->post('wish_description');
+
+        // INSERT INTO WishList (item, reason) VALUES ('$this->item', '$this->description');
+        $this->db->insert('WishList', $this);
     }
     
     /**
@@ -44,7 +53,11 @@ class WishList_model extends CI_Model
      * @param integer $id
      */
     function edit_wish($id) {
-        // TODO: add code here
+        $this->item = $this->input->post('wish_item');
+        $this->description = $this->input->post('wish_description');
+
+        // UPDATE WishList SET item = '$this->item', description = '$this->description' WHERE id = '$id';
+        $this->db->update('WishList', $this, array('id' => $id));
     }
     
     /**
@@ -53,6 +66,7 @@ class WishList_model extends CI_Model
      * @param integer $id
      */
     function delete_wish($id) {
-        // TODO: add code here
+        // DELETE FROM WishList WHERE id = '$id';
+        $this->db->delete('WishList', array('id' => $id));
     }
 }
